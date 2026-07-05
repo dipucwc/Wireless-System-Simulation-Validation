@@ -1,0 +1,355 @@
+# Wireless System Simulation and Validation
+
+This repository contains MATLAB and Python-based wireless system simulation and validation projects focused on RF/PHY performance evaluation, radio-link analysis, RF impairments, beamforming behavior, OTA/MPAC concepts, PA nonlinearity, DPD validation, and 5G/NTN wireless-system modeling.
+
+The goal of this repository is to demonstrate practical engineering capability in simulation-driven validation: not only generating results, but also defining assumptions, implementing models, comparing performance metrics, analyzing trade-offs, and validating wireless-system behavior using reproducible MATLAB and Python workflows.
+
+---
+
+## Repository Scope
+
+This repository focuses on simulation and validation topics related to:
+
+* RF link budget and coverage analysis
+* Path loss, shadowing, and fading-channel modeling
+* 5G NR TDD frame and resource-grid simulation
+* RF impairments such as EVM, ACLR, phase noise, and IQ imbalance
+* Power amplifier nonlinearity and DPD validation
+* Beam sweeping and beam-selection behavior
+* OTA/MPAC quiet-zone and chamber-validation concepts
+* NTN Doppler, delay, and link-budget validation
+* Monte Carlo-based wireless performance analysis
+
+---
+
+## Repository Structure
+
+```text
+wireless-system-simulation-validation/
+│
+├── 01_rf_link_budget_and_coverage_validation/
+├── 02_5g_nr_tdd_frame_and_resource_grid_simulation/
+├── 03_path_loss_shadowing_and_fading_channel_analysis/
+├── 04_rf_impairments_evm_aclr_validation/
+├── 05_phase_noise_and_iq_imbalance_simulation/
+├── 06_pa_nonlinearity_and_dpd_validation/
+├── 07_beam_sweeping_and_beam_selection_simulation/
+├── 08_ota_mpac_quiet_zone_validation/
+├── 09_ntn_doppler_delay_and_link_validation/
+└── 10_monte_carlo_wireless_performance_analysis/
+```
+
+Each project folder follows a consistent structure:
+
+```text
+project_folder/
+│
+├── matlab/        # MATLAB simulation scripts
+├── python/        # Python simulation scripts
+├── results/       # Generated numerical results
+├── figures/       # Plots and visualization outputs
+├── docs/          # Technical notes, equations, and analysis
+└── README.md      # Project-specific explanation
+```
+
+---
+
+## Projects
+
+### 01. RF Link Budget and Coverage Validation
+
+This project validates wireless link-budget behavior by estimating received power, path loss, noise floor, SNR/SINR, receiver sensitivity, and coverage range under different deployment assumptions.
+
+Key topics:
+
+* Free-space path loss
+* Log-distance path loss
+* Receiver noise floor
+* Link margin
+* Coverage-radius estimation
+* Uplink/downlink budget comparison
+
+Typical outputs:
+
+* Received power vs distance
+* SNR vs distance
+* Coverage threshold analysis
+* Link-margin comparison
+
+---
+
+### 02. 5G NR TDD Frame and Resource Grid Simulation
+
+This project models basic 5G NR time-frequency resource structures and validates how numerology, subcarrier spacing, slot duration, bandwidth, and TDD patterns affect resource availability.
+
+Key topics:
+
+* 5G NR numerology
+* Subcarrier spacing
+* OFDM symbol structure
+* Slot duration
+* TDD DL/UL pattern
+* Resource-grid visualization
+
+Typical outputs:
+
+* Time-frequency resource grid
+* DL/UL symbol allocation
+* Slot-level resource usage
+* Numerology comparison
+
+---
+
+### 03. Path Loss, Shadowing, and Fading Channel Analysis
+
+This project analyzes wireless propagation behavior using deterministic and statistical channel models. It compares path loss, log-normal shadowing, Rayleigh fading, and Rician fading effects on received signal quality.
+
+Key topics:
+
+* Large-scale path loss
+* Log-normal shadowing
+* Rayleigh fading
+* Rician fading
+* Channel gain distribution
+* Outage probability
+
+Typical outputs:
+
+* Path loss vs distance
+* Received power distribution
+* Fading envelope plots
+* Outage probability curves
+
+---
+
+### 04. RF Impairments, EVM, and ACLR Validation
+
+This project validates the impact of RF impairments on signal quality using EVM and spectral-regrowth metrics. It studies how transmitter impairments degrade modulation accuracy and adjacent-channel performance.
+
+Key topics:
+
+* Error Vector Magnitude, EVM
+* Adjacent Channel Leakage Ratio, ACLR
+* Additive noise
+* Gain imbalance
+* Phase imbalance
+* Carrier leakage
+* Spectral regrowth
+
+Typical outputs:
+
+* Constellation diagrams
+* EVM vs SNR
+* Power spectral density
+* ACLR comparison
+* Impairment sensitivity analysis
+
+---
+
+### 05. Phase Noise and IQ Imbalance Simulation
+
+This project models phase noise and IQ imbalance effects in RF transceiver chains and validates their impact on constellation quality, EVM, and spectrum.
+
+Key topics:
+
+* Oscillator phase noise
+* Common phase error
+* IQ gain imbalance
+* IQ phase mismatch
+* Image rejection ratio
+* Receiver impairment modeling
+
+Typical outputs:
+
+* Impaired constellation plots
+* EVM degradation curves
+* Spectrum with image components
+* Phase-noise sensitivity results
+
+---
+
+### 06. PA Nonlinearity and DPD Validation
+
+This project models power amplifier nonlinearity and validates digital predistortion concepts for improving transmitter linearity.
+
+Key topics:
+
+* Power amplifier AM-AM distortion
+* Power amplifier AM-PM distortion
+* Rapp model
+* Saleh model
+* Memory polynomial model
+* Digital predistortion
+* EVM and ACLR improvement
+
+Typical outputs:
+
+* AM-AM curve
+* AM-PM curve
+* Input/output spectrum
+* ACLR before and after DPD
+* EVM before and after DPD
+
+---
+
+### 07. Beam Sweeping and Beam Selection Simulation
+
+This project simulates beam sweeping and beam selection for directional wireless links. It validates how beam direction, angular resolution, antenna gain, and channel direction affect received signal quality.
+
+Key topics:
+
+* Beam sweeping
+* Beam selection
+* Array response
+* Directional gain
+* Beam misalignment
+* SNR-based beam decision
+
+Typical outputs:
+
+* Beam pattern plots
+* Received power per beam
+* Best-beam selection result
+* Beam misalignment loss
+* Angular-resolution comparison
+
+---
+
+### 08. OTA/MPAC Quiet-Zone Validation
+
+This project studies OTA and MPAC chamber-validation concepts using simulation-based modeling of field uniformity, probe configuration, angular coverage, and quiet-zone behavior.
+
+Key topics:
+
+* Over-the-air validation
+* Multi-probe anechoic chamber concept
+* Quiet-zone field uniformity
+* Probe antenna placement
+* Spatial channel emulation
+* Phase and amplitude variation
+
+Typical outputs:
+
+* Quiet-zone field map
+* Probe geometry visualization
+* Field-uniformity error
+* Amplitude/phase variation plots
+* Validation threshold comparison
+
+---
+
+### 09. NTN Doppler, Delay, and Link Validation
+
+This project models non-terrestrial network link behavior by analyzing Doppler shift, propagation delay, link budget, and signal-quality degradation for satellite-based wireless communication.
+
+Key topics:
+
+* NTN propagation delay
+* Doppler shift
+* Satellite link budget
+* Carrier-frequency offset
+* Timing offset
+* SNR degradation
+* Compensation requirement analysis
+
+Typical outputs:
+
+* Doppler shift vs velocity
+* Propagation delay vs altitude
+* Received power vs distance
+* SNR vs link distance
+* NTN link-margin analysis
+
+---
+
+### 10. Monte Carlo Wireless Performance Analysis
+
+This project uses Monte Carlo simulation to validate wireless-system performance under random channel, noise, fading, and interference conditions.
+
+Key topics:
+
+* Monte Carlo simulation
+* BER estimation
+* Outage probability
+* Random channel realization
+* Noise variation
+* Interference modeling
+* Statistical confidence
+
+Typical outputs:
+
+* BER vs SNR
+* Outage probability vs threshold
+* Histogram of received SINR
+* Performance confidence interval
+* Repeated-trial validation results
+
+---
+
+## Simulation Methodology
+
+Each project follows the same validation methodology:
+
+1. Define the wireless-system problem.
+2. Specify assumptions and input parameters.
+3. Implement the mathematical model.
+4. Run MATLAB and/or Python simulations.
+5. Generate plots and numerical results.
+6. Compare performance against expected behavior.
+7. Explain the engineering interpretation.
+8. Document limitations and possible improvements.
+
+---
+
+## Tools and Languages
+
+The repository uses:
+
+* MATLAB for signal-processing simulation, RF/PHY modeling, algorithm validation, and engineering plots
+* Python for numerical simulation, automation, result comparison, and visualization
+* NumPy for numerical computation
+* SciPy for signal-processing and statistical functions
+* Matplotlib for plotting
+* Git/GitHub for version control and documentation
+
+---
+
+## Example Validation Metrics
+
+The projects use different validation metrics depending on the topic:
+
+| Area             | Example Metrics                                               |
+| ---------------- | ------------------------------------------------------------- |
+| Link budget      | Received power, path loss, SNR, link margin                   |
+| Channel modeling | Channel gain, fading depth, outage probability                |
+| RF impairment    | EVM, ACLR, image rejection ratio                              |
+| PA/DPD           | AM-AM, AM-PM, spectral regrowth, linearization gain           |
+| Beamforming      | Beam gain, selected beam index, misalignment loss             |
+| OTA/MPAC         | Quiet-zone amplitude error, phase variation, field uniformity |
+| NTN              | Doppler shift, delay, link margin, CFO impact                 |
+| Monte Carlo      | BER, outage probability, SINR distribution                    |
+
+---
+
+## Main Technical Objective
+
+The main objective of this repository is to show simulation-based wireless engineering capability across RF, PHY, and system-level validation. The projects are designed to connect mathematical modeling, implementation, visualization, and engineering interpretation.
+
+This repository is especially relevant to roles such as:
+
+* Wireless System Engineer
+* RF System Engineer
+* RF/PHY Algorithm Engineer
+* 5G/6G Research Engineer
+* OTA Systems Engineer
+* RF Validation Engineer
+* PA/DPD Engineer
+* NTN/Satellite Wireless Systems Engineer
+
+---
+
+## Author
+
+**Md Moklesur Rahman**
+Wireless/RF/PHY Systems Engineer
+Focus areas: 5G NR, RF system specification, beamforming, beamforming calibration, RF/PHY simulation, wireless validation, MATLAB/Python modeling, and radio-system performance analysis.

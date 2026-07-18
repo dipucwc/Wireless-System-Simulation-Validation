@@ -197,8 +197,7 @@ Important boundary:
 ```text
 y[k] = G[k] s[k] + n[k]
 ```
-
-where `G[k] = H[k]W[k]` is the effective channel after digital precoding.
+where `G[k]  is the effective channel after digital precoding.
 
 ### Channel estimation
 

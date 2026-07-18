@@ -5,7 +5,7 @@
 **Project type:** Wireless physical-layer simulation and verification  
 **Implementation:** MATLAB and Python  
 **Repository:** Wireless-System-Simulation-Validation  
-**Project status:** Ongoing project — currently under development  
+**Project status:** Ongoing project- currently under development  
 **Author:** Md Moklesur Rahman  
 
 
